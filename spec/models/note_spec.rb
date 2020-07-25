@@ -10,10 +10,10 @@ RSpec.describe Note, type: :model do
     end
   end
 
-  describe "visible_to" do
-    it "returns reader names as a comma-separated string" do
-      note = Note.new readers: [users(:alice), users(:beth)]
-      assert note.visible_to == 'alice,beth'
-    end
-  end
+  # describe "visible_to" do
+  #   it "returns reader names as a comma-separated string" do
+  #     note = Note.new readers: [users(:alice), users(:beth)]
+  #     assert note.visible_to == 'alice,beth'
+  #   end
+  # end
 end
